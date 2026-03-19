@@ -3,9 +3,7 @@
 ## Project Overview
 This project analyzes Steam user data using SQL and visualizes insights in Power BI. The dashboard tracks user acquisition, engagement, behavior, and overall summary metrics, providing a comprehensive view of the Steam user ecosystem.
 
-<b>Dashboard Walkthrough:</b> 
-
-[![](https://img.youtube.com/vi/IeluTTADpdo/0.jpg)](https://youtu.be/IeluTTADpdo)
+<b>Dashboard Walkthrough:</b> ![Watch on YouTube!](https://youtu.be/IeluTTADpdo)
 
 ## Repository Structure
 `/queries          # SQL queries for data extraction and transformation`
@@ -17,9 +15,9 @@ This project analyzes Steam user data using SQL and visualizes insights in Power
 ## Dashboard Pages
 
 ### Summary
-
+![](https://github.com/bilakilla/steam-sql-analysis/blob/main/gifs/steam_pbi_summary.gif) 
 ### Acquisition
-
+![](https://github.com/bilakilla/steam-sql-analysis/blob/main/gifs/steampbiacq.gif)
 ### Engagement
 
 ### Behaviour
