@@ -1,7 +1,8 @@
 # Steam SQL Data Analysis & Power BI Dashboard
+(WORK IN PROGRESS)
 
 ## Project Overview
-This project analyzes Steam user data using SQL and visualizes insights in Power BI. The dashboard tracks user acquisition, engagement, behavior, and overall summary metrics, providing a comprehensive view of the Steam user ecosystem.
+This project analyses Steam user data using SQL and visualises insights in Power BI. The dashboard tracks user acquisition, engagement, behavior, and overall summary metrics, providing a comprehensive view of the Steam user ecosystem.
 
 <b>Dashboard Walkthrough:</b> [Watch on YouTube!](https://youtu.be/IeluTTADpdo)
 
