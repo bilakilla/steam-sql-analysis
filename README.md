@@ -1,14 +1,33 @@
 # Steam SQL Data Analysis & Power BI Dashboard
 
 ## Project Overview
-This project explores user acquisition, engagement, and behaviour, and overall summary metrics within a [Steam dataset of 200k user interactions](https://www.kaggle.com/datasets/tamber/steam-video-games) using SQL. The processed data is then visualised in an interactive Power BI dashboard.
+This project explores user acquisition, engagement, and behaviour, and overall summary metrics within a [dataset of 200k Steam user interactions](https://www.kaggle.com/datasets/tamber/steam-video-games) using SQL.
 
-<b>Dashboard Walkthrough:</b> [Watch on YouTube!](https://youtu.be/IeluTTADpdo)
+The goal is to build a structured analytics pipeline that uncovers:
+- Which games drive purchases and monetisation  
+- Which games drive engagement  
+- How player behaviour varies across distinct user segments  
 
-1. Raw Steam data is queried and cleaned using SQL
-2. Data is queried to compute key metrics (acquisition, engagement, and behaviour)
-3. Aggregated datasets are exported as .csv files
-4. Power BI uses these datasets for visualisation
+These insights are then visualised through an interactive Power BI dashboard.
+
+**Dashboard Walkthrough:** [Watch on YouTube!](https://youtu.be/IeluTTADpdo) 
+
+## Data Pipeline
+1. Raw Steam data is extracted and cleaned using SQL
+2. Analytical queries compute acquisition, engagement, and behavioural metrics
+3. Results are aggregated into structured datasets
+4. Outputs are exported as `.csv` files
+5. Power BI uses these datasets for interactive visualisation
+
+## Data Model & Dataset Design
+The original data is split across several related tables (users, games, purchases, and activity). I used SQL to join these tables together and calculate all required metrics.
+
+Instead of connecting Power BI directly to the raw data, I created two final, analysis-ready datasets:
+
+`merged_queries_per_user.csv` → Contains user-level metrics (e.g. playtime, purchases, user segments) <br>
+`merged_queries_per_game.csv` → Contains game-level metrics (e.g. popularity, total playtime, performance)
+
+These datasets act as clean, pre-processed inputs for Power BI, making the dashboard simpler, faster, and easier to work with.
 
 ## Repository Structure
 
@@ -21,7 +40,7 @@ This project explores user acquisition, engagement, and behaviour, and overall s
 
 The project is structured around three analytical layers:
 
-### User Acquisition
+### 1. User Acquisition
 **Focus:** How do users enter and become customers within the platform?
 
 **Datasets:**
@@ -36,7 +55,7 @@ The project is structured around three analytical layers:
 - Understand broad purchasing behaviour
 - Identify conversion trends from users → customers
 
-### User Engagement
+### 2. User Engagement
 **Focus:** How actively do users interact with games?
 
 **Datasets:**
@@ -47,15 +66,15 @@ The project is structured around three analytical layers:
 `most_engaging_games.csv` → Highest average playtime per user <br>
 `most_played_games_by_players.csv` → Most popular games (by player count) <br>
 `most_played_games_by_playtime.csv` → Most played games (by total time) <br>
-`player_conversion_rate.csv` → % of players who become purchasers
+`player_conversion_rate.csv` → % of customers who become players
 
 **Purpose:**
 
 - Evaluate depth vs breadth of engagement
-- Compare popularity vs retention
+- Compare purchases vs players
 - Identify high-performing vs underperforming titles
 
-### User Behaviour
+### 3. User Behaviour
 <b>Focus:</b> How do different types of users interact with the platform?
 
 Users are segmented into behavioural personas based on purchase activity and playtime:
@@ -90,15 +109,24 @@ Users are segmented into behavioural personas based on purchase activity and pla
 **6. Divergence Between Spending & Engagement**
 - Behavioural clusters highlight that high spending does not always correlate with high engagement (e.g., Game Collectors).
 
-## Dashboard Pages
+## Power BI Dashboard Pages
 
-### Summary
+### 1. Summary
 ![](https://github.com/bilakilla/steam-sql-analysis/blob/main/gifs/steam_pbi_summary.gif) 
-### Acquisition
+### 2. Acquisition
 ![](https://github.com/bilakilla/steam-sql-analysis/blob/main/gifs/steampbiacq.gif)
-### Engagement
+### 3. Engagement
+![](https://github.com/bilakilla/steam-sql-analysis/blob/main/gifs/steampbiengagement.gif)
+### 4. Behaviour
+![](https://github.com/bilakilla/steam-sql-analysis/blob/main/gifs/steampbiuserpersona.gif)
 
-### Behaviour
+## Skills Demonstrated
+
+- SQL (joins, aggregations, analytical queries)  
+- Data modelling & metric design  
+- User segmentation & behavioural analysis  
+- Data visualisation (Power BI)  
+- End-to-end analytics workflow development 
 
 ## How to Use
 1. Clone this repo:
