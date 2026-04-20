@@ -3,14 +3,14 @@
 ## Project Overview
 This project explores user acquisition, engagement, and behaviour, and overall summary metrics within a [dataset of 200k Steam user interactions](https://www.kaggle.com/datasets/tamber/steam-video-games) using SQL.
 
-The goal is to build a structured analytics pipeline that uncovers:
+The goal was to build a structured analytics pipeline uncovering:
 - Which games drive purchases and monetisation  
 - Which games drive engagement  
 - How player behaviour varies across distinct user segments  
 
-These insights are then visualised through an interactive Power BI dashboard.
+These insights were then visualised through an interactive Power BI dashboard.
 
-**Dashboard Walkthrough:** [Watch on YouTube!](https://youtu.be/IeluTTADpdo) 
+**Power BI Dashboard Walkthrough:** [Watch on YouTube!](https://youtu.be/IeluTTADpdo) 
 
 ## Data Pipeline
 1. Raw Steam data is extracted and cleaned using SQL
@@ -98,7 +98,7 @@ Users are segmented into behavioural personas based on purchase activity and pla
 - A strong presence of Valve titles (e.g. Dota 2, Counter Strike) among top purchases suggests significant brand and franchise loyalty within the player base.
 
 **3. Polarised Engagement Distribution**
-- Player engagement is highly skewed, with a noticeable gap in mid-tier activity—users tend to be either lightly or heavily engaged.
+- Player engagement is highly skewed, with a noticeable gap in mid-tier activity, with users being either lightly or heavily engaged.
 
 **4. Engagement Dominated by Few Titles**
 - A small number of games (notably Counter-Strike variants) drive a disproportionate share of total playtime and average engagement.
